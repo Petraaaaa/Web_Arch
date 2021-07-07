@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Login form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <input type="radio" name="tab" id="signin" checked="checked" /><input
+        type="radio"
+        name="tab"
+        id="register"
+      />
+      <div class="pages">
+        <!-- login -->
+        <div class="page">
+          <h1>Login</h1>
+          <form action="login.php" method="post">
+            <div class="input">
+              <div class="title">
+                <i class="material-icons">account_box</i> USERNAME
+              </div>
+              <input
+                class="text"
+                type="text"
+                placeholder="Username"
+                name="username"
+              />
+            </div>
+            <div class="input">
+              <div class="title">
+                <i class="material-icons">lock</i> PASSWORD
+              </div>
+              <input
+                class="text"
+                type="password"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+            <div class="input"><input type="submit" value="LOG IN" /></div>
+          </form>
+        </div>
+
+        <!-- register -->
+        <div class="page signup">
+          <h1>Register</h1>
+          <form action="register.php" method="post">
+            <div class="input">
+              <div class="title"><i class="material-icons">person</i> NAME</div>
+              <input
+                class="text"
+                type="text"
+                placeholder="Username"
+                name="username"
+              />
+            </div>
+            <div class="input">
+              <div class="title">
+                <i class="material-icons">markunread_mailbox</i> EMAIL
+              </div>
+              <input
+                class="text"
+                type="email"
+                placeholder="email"
+                name="email"
+              />
+            </div>
+            <div class="input">
+              <div class="title">
+                <i class="material-icons">lock</i> PASSWORD
+              </div>
+              <input
+                class="text"
+                type="password"
+                placeholder="Password"
+                name="password"
+              />
+            </div>
+            <div class="input">
+              <div class="title">
+                <i class="material-icons">lock</i> CONFIRM
+              </div>
+              <input
+                class="text"
+                type="password"
+                placeholder="Confirm Password"
+                name="cpassword"
+              />
+            </div>
+            <div class="input">
+              <input type="submit" value="Create Account" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="tabs">
+        <label class="tab" for="signin"> <div class="text">Login</div> </label
+        ><label class="tab" for="register">
+          <div class="text">Register</div>
+        </label>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
